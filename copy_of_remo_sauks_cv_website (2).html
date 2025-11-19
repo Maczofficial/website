@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>IT-süsteemide nooremspetsialist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+      --glass:rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family:'Inter',sans-serif;
+    }
+    body{margin:0;background:#08121e;color:#e6eef8;min-height:100vh}
+    header{display:flex;justify-content:center;padding:20px;border-bottom:1px solid rgba(255,255,255,0.05)}
+    nav{display:flex;gap:14px}
+    nav a{text-decoration:none;color:var(--accent);font-weight:600;cursor:pointer;padding:6px 10px;border-radius:6px}
+    nav a.active{background:var(--accent);color:#001}
+    .container{padding:24px;max-width:900px;margin:auto}
+    .page{display:none}
+    .page.active{display:block}
+    .card{background:var(--card);padding:20px;margin-bottom:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:8px 12px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .button{
+      display:inline-block;
+      padding:10px 16px;
+      margin-top:12px;
+      background:var(--accent);
+      color:#001;
+      font-weight:600;
+      border-radius:6px;
+      text-decoration:none;
+      cursor:pointer;
+    }
+    footer{text-align:center;color:var(--muted);margin:30px 0;font-size:13px}
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <a data-page="home" class="active">Avaleht</a>
+    <a data-page="education">Haridus</a>
+    <a data-page="skills">Oskused</a>
+    <a data-page="experience">Töökogemus</a>
+    <a data-page="arengumapp">Arengumapp</a>
+    <a data-page="contact">Kontakt</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- Avaleht -->
+  <div class="page active" id="home">
+    <div class="card">
+      <h2>Tere!</h2>
+      <p>Olen 20-aastane, omandanud IT kutsekeskhariduse Viljandi Kutseõppekeskuses. Mul on huvi tehnoloogia vastu, aga olen valmis rakendama oma oskusi ja õppimisvalmidust erinevates valdkondades. Olen motiveeritud, kohusetundlik ja valmis õppima ja arenema erinevates valdkondades.</p>
+    </div>
+  </div>
+
+  <!-- Haridus -->
+  <div class="page" id="education">
+    <div class="card">
+      <h2>Haridus</h2>
+      <p>Paistu Põhikool — põhiharidus (2012–2021)</p>
+      <p>Viljandi Kutseõppekeskus — IT-süsteemide nooremspetsialist (2021–2024)</p>
+    </div>
+  </div>
+
+  <!-- Oskused -->
+  <div class="page" id="skills">
+    <div class="card">
+      <h2>Tehnilised oskused</h2>
+      <div class="skills">
+        <div class="skill">Windows ja Linux kasutamine ning serverite põhihaldus</div>
+        <div class="skill">Võrgunduse põhiteadmised (TCP/IP, DNS, DHCP, VLAN)</div>
+        <div class="skill">Skriptimise algteadmised (PowerShell / Bash)</div>
+        <div class="skill">Microsoft 365 ja kasutajahaldus</div>
+        <div class="skill">IT-turbepõhimõtted ja ligipääsude haldus</div>
+        <div class="skill">Varundamise ja taastamise alused</div>
+        <div class="skill">Probleemide lahendamine ja tehniline tugi</div>
+        <div class="skill">Dokumenteerimine ja meeskonnatöö</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Töökogemus -->
+  <div class="page" id="experience">
+    <div class="card">
+      <h2>Töökogemus</h2>
+      <h3>Viljandi Linnavalitsus — IT praktikant</h3>
+      <ul>
+        <li>Igapäevane tehniline tugi koolides ja raamatukogus</li>
+        <li>Kaablite vedamine ja uute töökohtade seadistamine</li>
+        <li>Masspaigaldus lahenduste seadistamine</li>
+        <li>Jira piletisüsteem</li>
+      </ul>
+      <h3>Viljandi Kultuuriakadeemia — IT praktikant</h3>
+      <ul>
+        <li>Kasutajatoe ülesanded</li>
+        <li>Uute töökohtade seadistamine</li>
+      </ul>
+      <h3>Pesuekspert — puhastusteenindaja</h3>
+      <ul>
+        <li>Spordisaalide ja duširuumide hooldus</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Arengumapp -->
+  <div class="page" id="arengumapp">
+    <div class="card">
+      <h2>Arengumapp</h2>
+      <p>Kui tahad tutvuda minu koolis õpituga, saad vajutada allolevale nupule ning tutvuda minu koolis koostatud arengumapiga. Seal on kokkuvõte enamus tundidest, mida koolis läbisin.</p>
+      <a href="https://sites.google.com/vikk.ee/remosauksarengumapp/kodu" target="_blank" class="button">Vaata Arengumappi</a>
+    </div>
+  </div>
+
+  <!-- Kontakt -->
+  <div class="page" id="contact">
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>E-post: sauksremo@gmail.com</p>
+      <p>Telefon: +372 5682 4776</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/remo-sauks" target="_blank" style="color:var(--accent)">https://www.linkedin.com/in/remo-sauks</a></p>
+    </div>
+  </div>
+
+</div>
+
+<footer>© Remo Sauks — IT-süsteemide nooremspetsialist</footer>
+
+<script>
+  const links=document.querySelectorAll('nav a');
+  const pages=document.querySelectorAll('.page');
+  function showPage(name){
+    pages.forEach(p=>p.classList.toggle('active',p.id===name));
+    links.forEach(l=>l.classList.toggle('active',l.dataset.page===name));
+  }
+  links.forEach(l=>l.addEventListener('click',()=>showPage(l.dataset.page)));
+</script>
+
+</body>
+</html>
